@@ -36,58 +36,58 @@ class _DicePageState extends State<DicePage> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Row(
-          children: <Widget>[
-            Expanded(
-              child: TextButton(
-                onPressed: () {
-                  setState(() {
-                    //changeDiceFace(); //Function Call
-                  });
-                },
+        Expanded(
+          child: Row(
+            children: <Widget>[
+              Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Image.asset('images/dice$leftDiceNumber.png'),
                 ),
               ),
-            ),
-            Expanded(
-              child: TextButton(
-                onPressed: () {
-                  setState(() {
-                    //changeDiceFace(); //Function Call
-                  });
-                },
+              Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Image.asset('images/dice$rightDiceNumber.png'),
                 ),
               ),
-            ),
-          ],
-        ),
-        ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            primary: Colors.red[900],
-            shadowColor: Colors.red[500],
-            elevation: 5.0,
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.all(Radius.circular(20)),
-            ),
-            onSurface: Colors.blue,
-            padding: EdgeInsets.all(20.0),
+            ],
           ),
-          onPressed: () {
-            setState(() {
-              changeDiceFace(); //Function Call
-            });
-          },
-          child: Text(
-            "ROLL!",
-            style: TextStyle(
-              fontSize: 25.0,
-              letterSpacing: 3.0,
-            ),
+        ),
+        Expanded(
+          child: Row(
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                      left: 100.0, top: 20.0, right: 100.0, bottom: 20.0),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.red[900],
+                      shadowColor: Colors.red[500],
+                      elevation: 5.0,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      onSurface: Colors.blue,
+                      padding: EdgeInsets.all(20.0),
+                    ),
+                    onPressed: () {
+                      setState(() {
+                        changeDiceFace(); //Function Call
+                      });
+                    },
+                    child: Text(
+                      "ROLL!",
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        letterSpacing: 3.0,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ],
