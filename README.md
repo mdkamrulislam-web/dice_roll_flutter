@@ -2,15 +2,10 @@
 
 A Flutter fun project to end argument.
 
-## Getting Started
+## My Website
+### www.mdkamrulislam.me
 
-This project is a starting point for a Flutter application.
+I'm Kamrul from Dhaka, Bangladesh. I recently started learning Flutter Development. This is one of my pratice projects. Its a very simple project. Please find the Demo video of the project below.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Demo Video
+https://user-images.githubusercontent.com/68586718/128548086-71d25d85-fa0e-4a58-a632-d5312772cc10.mp4
